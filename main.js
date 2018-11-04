@@ -7,3 +7,13 @@ var todos = [
     'Comer um montão',
     'Dar uma voltinha de bike'
 ];
+
+function renderTodos(){
+    for (todo of todos) {
+        var todoElement = document.createElement('li');
+        var todoText = document.createTextNode(todo);
+
+        todoElement.appendChild(todoText);
+        listElement.appendChild(todoElement)
+    }
+}
