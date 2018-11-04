@@ -14,6 +14,8 @@ function renderTodos(){
         var todoText = document.createTextNode(todo);
 
         todoElement.appendChild(todoText);
-        listElement.appendChild(todoElement)
+        listElement.appendChild(todoElement);
     }
 }
+
+renderTodos();
